@@ -1,0 +1,10 @@
+header.header
+    .container
+        .header__logo
+        .header__search
+        .header__socials
+            ul.header__socials-list
+                - var items = {'vk' : 'вэка', 'fb' : 'фэбэ', 'tw' : 'тэвэ'}
+                each key, value in items
+                    li.header__socials-item
+                        a(href='#' class="header__socials-link header__socials-link_" + value)

@@ -1,0 +1,10 @@
+.sidebar
+    .acco
+        ul.acco__list
+            each item in ["пункт 1", "Пункт 2", "пункт 3"]
+                li.acco__item
+                    a.acco__trigger= item
+                    ul.acco__inner-list
+                        each item in ["подпункт 1", "подпункт 2", "подпункт 3"]
+                            li.acco__inner-item
+                                a.acco__inner-link= item

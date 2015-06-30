@@ -1,0 +1,19 @@
+/*fonts*/
+$light: normal 1em 'ElektraLightPro';
+$medium: normal 1em 'ElektraMediumPro';
+$bold:1em'ElektraLightProBold';
+
+/*colors*/
+$txt: #5C7B98;
+$header: #dbe5ef;
+$blue: #00b9fe;
+$purple:#613993;
+
+$border: 1px solid #E6ECED;
+
+/*mixin's*/
+@mixin list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
