@@ -86,9 +86,9 @@
                 <!-- Переключение вида каталога-->
                 <div class="catalog-style">
                     <form action="">
-                        <select name="" id="" class="catalog-style__select">
-                            <option value="" class="catalog-style__select-option">Сеткой</option>
-                            <option value="" selected="selected" class="catalog-style__select-option--selected">Линиями</option>
+                        <select id ="catst" name="" class="catalog-style__select">
+                            <option id="grid" value="" class="catalog-style__select-option">Сеткой</option>
+                            <option id="line" value="" selected="selected" class="catalog-style__select-option--selected">Линиями</option>
                         </select>
                     </form>
                 </div>
@@ -113,15 +113,15 @@
             <!-- Сайдбар -->
             <aside class="sidebar sidebar_position_left">
                     <nav class="sidebar__block">
-                        <ul class="list catalog-nav">
-                            <li class="list__item catalog-nav__item">
-                                <a href="#" class="catalog-nav__subnav-handler catalog-nav__subnav_handler_active catalog-nav__link catalog-nav__link_active">iPhone</a>
-                                <ul class="list catalog-nav catalog-nav__subnav catalog-nav catalog-nav__subnav_opened">
-                                    <li class="list__item catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 4S</a></li>
-                                    <li class="list__item catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 5</a></li>
-                                    <li class="list__item catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 5s с эксклюзивным дизайном</a></li>
-                                    <li class="list__item catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 6</a></li>
-                                    <li class="list__item catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 6 plus</a></li>
+                        <ul class="catalog-nav">
+                            <li class="catalog-nav__item">
+                                <a href="#" class="catalog-nav__subnav-handler catalog-nav__subnav_handler--active catalog-nav__link catalog-nav__link--active">iPhone</a>
+                                <ul class="catalog-nav catalog-nav__subnav catalog-nav__subnav_opened">
+                                    <li class="catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 4S</a></li>
+                                    <li class="catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 5</a></li>
+                                    <li class="catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 5s с эксклюзивным дизайном</a></li>
+                                    <li class="catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 6</a></li>
+                                    <li class="catalog-nav__item catalog-nav__subnav-item"><a href="#" class="catalog-nav__link catalog-nav__subnav-link">iPhone 6 plus</a></li>
                                 </ul>
                             </li>
                             <li class="list__item catalog-nav__item">
@@ -341,7 +341,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.js"><\/script>')</script>
     <script src='scripts/totop.js'></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/accordeon.js"></script>
     
 </body>
 </html>

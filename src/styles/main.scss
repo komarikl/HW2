@@ -264,18 +264,18 @@ a{
 .catalog-nav__link:hover {
     background: #bed1e3;
 }
-.catalog-nav__subnav_handler_active {
-    background: #00b9fe;
-    color: #fff;
-    transition: background 2s ease, color .1s ease;
-}
-.catalog-nav__subnav_handler_active:hover {
-    background: #00b9fe;
-    color: #fff;
+.catalog-nav__subnav_handler--active {
+	background: $blue;
+	color: #fff;
+	transition: background 2s ease, color .1s ease;
+		&:hover {
+		background: #00b9fe;
+		color: #fff;
+	}
 }
 
 .catalog-nav__subnav {
-    display: block;
+    display: none;
     overflow: hidden;
     height: 0;
     padding-left: 15px;
@@ -296,7 +296,7 @@ a{
     left: 5px;
     display: block;
     content: '>';
-    font-family: 'ElektraLightProBold';
+    font-family: $bold;
     font-size: 14px;
 }
 
@@ -344,6 +344,40 @@ a{
 
 .content-description__body{
 	line-height: 20px;
+}
+
+/*Сетка*/
+.products-list__item_grid {
+	float: left;
+	width: 230px;
+	min-height: 354px;
+	border:$border;
+	margin-bottom: 20px;
+	margin-left: 22px;
+	&:hover {
+		cursor: pointer;
+		box-shadow: 1px 0px 13px 0px #c0c0c0;
+	}
+	&:nth-child(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
+.product__img-wrapper_grid {
+	height: 170px;
+	width: 160px;
+	margin: 30px 0 10px 30px;
+	overflow: hidden;
+}
+
+.content-description__header_grid {
+	width: 200px;
+	margin-left: 20px;
+}
+.content-description__body_grid {
+	list-style-type: none;
+	margin: 0 0 0 20px;
+	padding: 0;
 }
 
 /*Вверх*/
