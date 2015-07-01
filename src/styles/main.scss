@@ -119,10 +119,9 @@ a{
 		border-top: 20px solid transparent;
 		border-bottom: 20px solid transparent;
 	}
-	/*&:last-child{
-		padding-right: 8px;
-		padding-left: 27px;
-	}*/
+	&:first-child{
+		clip-path: polygon(100% 0,100% 50%,100% 100%,0 100%,10px 50%,0 0);
+	}
 	&:hover {
 		background: #dce6f0;
 	}
@@ -158,6 +157,7 @@ a{
 /*Тело*/
 
 .container{
+	position: relative;
 	width: 1000px;
 	padding: 0px;
 	margin: 0px auto;
@@ -346,14 +346,43 @@ a{
 	line-height: 20px;
 }
 
-.top-wrapper{
-	display: none;
+/*Вверх*/
+.top{
+	width:60px;
+	background:$blue;
+	text-align:center;
+	padding:7px;
+	position:absolute;
+	bottom:55px;
+	right:-90px;
+	cursor:pointer;
+	font:$bold;
+	color:#FFF;
+	&:before, &:after{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		right: 33px;
+		border-style: solid;
+		border-width: 0 5px 5px;
+	}
+	&:before{
+		bottom: 0;
+		border-color: transparent transparent #fff;
+	}
+	&:after{
+		top: -5px;
+		border-color: transparent transparent $blue;
+	}
 }
+
 
 
 /*Футeр*/
 .footer{
-	background: $purple;
+	background: $purple url(../img/pattern.png);
 }
 
 .footer-container{
